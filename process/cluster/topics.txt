@@ -1,0 +1,18 @@
+Create topic
+./bin/kafka-topics.sh --create --zookeeper localhost:2181,localhost:2182,localhost:2183  --replication-factor 3 --partitions 3 --topic SpringKafkaTopic 
+
+Check for topic
+bin/kafka-topics.sh --zookeeper localhost:2181,localhost:2182,localhost:2183 --describe --topic SpringKafkaTopic
+
+
+Create a producer
+./bin/kafka-console-producer.sh --broker-list localhost:9093,localhost:9094,localhost:9095 --topic SpringKafkaTopic 
+
+Create a consumer for prtition 0
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9093,localhost:9094,localhost:9095 --topic SpringKafkaTopic --partition 0 --from-beginning
+
+Create a consumer for prtition 2
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9093,localhost:9094,localhost:9095 --topic SpringKafkaTopic --partition 1 --from-beginning
+
+Create a consumer for prtition 3
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9093,localhost:9094,localhost:9095 --topic SpringKafkaTopic --partition 2 --from-beginning

@@ -1,0 +1,48 @@
+mvn archetype:generate \
+-DarchetypeGroupId=org.codehaus.mojo.archetypes \
+-DarchetypeArtifactId=pom-root \
+-DarchetypeVersion=RELEASE
+
+com.doshin.service.kafka
+kafkaservice
+1.0
+com.doshin.service.kafka
+
+mvn archetype:generate \
+-DarchetypeGroupId=org.apache.maven.archetypes \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=RELEASE
+
+com.doshin.service.kafka
+kafkaserviceapi
+com.doshin.service.kafka.api
+
+com.doshin.service.kafka
+kafkabao
+com.doshin.service.kafka.bao
+
+com.doshin.service.kafka
+kafkadao
+com.doshin.service.kafka.dao
+
+com.doshin.service.kafka
+kafkaserviceimpl
+com.doshin.service.kafka.impl
+
+com.doshin.service.kafka
+kafkaprocessor
+com.doshin.service.kafka.processor
+
+com.doshin.service.kafka
+kafkautil
+com.doshin.service.kafka.util
+
+mvn archetype:generate \
+-DarchetypeGroupId=org.apache.maven.archetypes \
+-DarchetypeArtifactId=maven-archetype-webapp \
+-DarchetypeVersion=RELEASE
+
+
+com.doshin.service.kafka
+kafkaserviceweb
+com.doshin.service.kafka.web

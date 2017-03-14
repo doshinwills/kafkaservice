@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="kafkaserviceweb">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="kafkaserviceimpl-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/kafkaserviceimpl/kafkaserviceimpl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="kafkaserviceapi-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/kafkaserviceapi/kafkaserviceapi">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="kafkabao-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/kafkabao/kafkabao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="kafkaprocessor-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/kafkaprocessor/kafkaprocessor">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="kafkautil-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/kafkautil/kafkautil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="kafkadao-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/kafkadao/kafkadao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="kafkaserviceweb"/>
+        <property name="java-output-path" value="/kafkaserviceweb/target/classes"/>
+    </wb-module>
+</project-modules>
